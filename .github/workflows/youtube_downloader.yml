@@ -1,6 +1,5 @@
 name: دانلودر یوتیوب
 
-
 on:
   workflow_dispatch:
     inputs:
@@ -31,6 +30,9 @@ on:
         required: false
         type: string
         default: 'downloads'
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   fetch-and-store:
